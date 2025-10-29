@@ -1,18 +1,22 @@
- # Archivos compilados y ejecutables
+# Archivos compilados y ejecutables
 *.exe
 *.out
 *.app
 *.obj
 *.o
 *.elf
+*.bin
+*.hex
 
-# Archivos de depuraci�n
+# Archivos de depuración
 *.pdb
 *.ilk
 *.exp
 *.idb
+*.iobj
+*.ipdb
 
-# Librer�as precompiladas
+# Librerías precompiladas
 *.lib
 *.a
 *.la
@@ -20,6 +24,8 @@
 *.dll
 *.so
 *.dylib
+*.tlb
+*.tlh
 
 # Visual Studio
 .vs/
@@ -28,8 +34,10 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.vcxproj.filelist
+*.vcxprojResolveAssemblyReference.cache
 
-# Directorios de compilaci�n
+# Directorios de compilación
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -43,10 +51,12 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+[Oo]ut/
 
-# Cach� de IntelliSense
+# Caché de IntelliSense
 *.VC.db
 *.VC.VC.opendb
+ipch/
 
 # Archivos de respaldo y temporales
 *~
@@ -56,6 +66,7 @@ bld/
 *.temp
 *.bak
 *.cache
+*.sass-cache/
 
 # Archivos generados por el compilador
 *.suo
@@ -64,6 +75,14 @@ bld/
 *.opensdf
 *.cachefile
 *.VC.opendb
+*.aps
+
+# CMake (si lo usas)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
 
 # ReSharper
 _ReSharper*/
@@ -74,3 +93,19 @@ _ReSharper*/
 .DS_Store
 Thumbs.db
 Desktop.ini
+ehthumbs.db
+
+# Archivos de instaladores y paquetes
+*.msi
+*.msix
+*.msm
+*.msp
+*.cab
+*.7z
+*.rar
+*.zip
+
+# Documentación generada
+docs/html/
+docs/latex/
+doxygen/
