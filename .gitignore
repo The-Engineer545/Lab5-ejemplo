@@ -1,80 +1,54 @@
-###################################################################################
-# ARCHIVOS CRÍTICOS DEL PROYECTO QUE NO DEBEN SER IGNORADOS (Asegúrate de subirlos):
-# MiProyecto.sln
-# MiProyecto.vcxproj
-# MiProyecto.vcxproj.filters
-# MiProyecto.cpp, MiProyecto.h, etc.
-###################################################################################
-
-# 1. ARCHIVOS COMPILADOS Y EJECUTABLES
-######################################
+ # Archivos compilados y ejecutables
 *.exe
 *.out
 *.app
 *.obj
 *.o
 *.elf
-*.bin
+
+# Archivos de depuraci�n
 *.pdb
-*.idb
 *.ilk
 *.exp
+*.idb
 
-# 2. LIBRERÍAS PRECOMPILADAS Y BINARIOS
-########################################
+# Librer�as precompiladas
 *.lib
-*.dll
-*.so
-*.dylib
 *.a
 *.la
 *.lo
+*.dll
+*.so
+*.dylib
 
-# 3. DIRECTORIOS DE COMPILACIÓN E INTERMEDIOS
-##############################################
-# Directorios de salida de Visual Studio (ignorar mayúsculas/minúsculas)
-[Dd]ebug/
-[Rr]elease/
-[Bb]in/
-[Oo]bj/
-bld/
-
-# Arquitecturas
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-
-# Logs
-[Ll]og/
-[Ll]ogs/
-
-# 4. VISUAL STUDIO Y CONFIGURACIÓN DEL IDE (PERSONAL)
-######################################################
-# Carpeta de configuración del IDE local de cada usuario (CRÍTICO DE IGNORAR)
-.vs/
-
-# Archivos de configuración de usuario (NO SON NECESARIOS PARA EL PROYECTO)
+# Visual Studio
+*.vs/
 *.vcxproj.user
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Caché de IntelliSense
+# Directorios de compilaci�n
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Cach� de IntelliSense
 *.VC.db
 *.VC.VC.opendb
-*.ncb
-*.sdf
-*.opensdf
-*.cachefile
 
-# Archivos de dependencia (NuGet)
-packages/
-project.assets.json
-
-# 5. ARCHIVOS DE RESPALDO Y TEMPORALES
-######################################
+# Archivos de respaldo y temporales
 *~
 *.swp
 *.swo
@@ -83,17 +57,20 @@ project.assets.json
 *.bak
 *.cache
 
-# 6. HERRAMIENTAS Y ARCHIVOS DE SISTEMA
-########################################
+# Archivos generados por el compilador
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.opendb
+
 # ReSharper
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# Visual Assist
-VA_*.bak
-
-# Archivos de sistema operativo
-.DS_Store # macOS
-Thumbs.db # Windows
+# Archivos de sistema
+.DS_Store
+Thumbs.db
 Desktop.ini
