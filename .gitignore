@@ -1,80 +1,77 @@
 ###################################################################################
-# ARCHIVOS CRÍTICOS DEL PROYECTO QUE NO DEBEN SER IGNORADOS (Asegúrate de subirlos):
-# MiProyecto.sln
-# MiProyecto.vcxproj
-# MiProyecto.vcxproj.filters
-# MiProyecto.cpp, MiProyecto.h, etc.
+# ARCHIVOS CRÍTICOS DEL PROYECTO QUE SÍ DEBES SUBIR:
+# - MiProyecto.sln
+# - MiProyecto.vcxproj
+# - MiProyecto.vcxproj.filters
+# - *.cpp, *.h, *.props, *.targets
 ###################################################################################
 
+# === EXCEPCIONES: NUNCA IGNORAR ARCHIVOS DEL PROYECTO ===
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
+!*.cpp
+!*.h
+!*.props
+!*.targets
+
 # 1. ARCHIVOS COMPILADOS Y EJECUTABLES
-######################################
 *.exe
 *.out
 *.app
 *.obj
 *.o
 *.elf
-*.bin
+
+# 2. ARCHIVOS DE DEPURACIÓN
 *.pdb
-*.idb
 *.ilk
 *.exp
+*.idb
 
-# 2. LIBRERÍAS PRECOMPILADAS Y BINARIOS
-########################################
+# 3. LIBRERÍAS PRECOMPILADAS
 *.lib
-*.dll
-*.so
-*.dylib
 *.a
 *.la
 *.lo
+*.dll
+*.so
+*.dylib
 
-# 3. DIRECTORIOS DE COMPILACIÓN E INTERMEDIOS
-##############################################
-# Directorios de salida de Visual Studio (ignorar mayúsculas/minúsculas)
+# 4. DIRECTORIOS DE COMPILACIÓN
 [Dd]ebug/
+[Dd]ebugPublic/
 [Rr]elease/
-[Bb]in/
-[Oo]bj/
-bld/
-
-# Arquitecturas
+[Rr]eleases/
 x64/
 x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
-
-# Logs
+bld/
+[Bb]in/
+[Oo]bj/
 [Ll]og/
 [Ll]ogs/
 
-# 4. VISUAL STUDIO Y CONFIGURACIÓN DEL IDE (PERSONAL)
-######################################################
-# Carpeta de configuración del IDE local de cada usuario (CRÍTICO DE IGNORAR)
-.vs/
-
-# Archivos de configuración de usuario (NO SON NECESARIOS PARA EL PROYECTO)
+# 5. VISUAL STUDIO - CONFIGURACIÓN LOCAL
+.vs/                    # ← CORREGIDO: ahora sí ignora la carpeta oculta
 *.vcxproj.user
 *.suo
-*.user
+*.user                  # ← Configuración personal
+*.users                 # ← ¡AGREGADO! (archivos de usuarios locales)
 *.userosscache
 *.sln.docstates
 
-# Caché de IntelliSense
+# 6. CACHÉ DE INTELLISENSE Y ARCHIVOS GENERADOS
 *.VC.db
 *.VC.VC.opendb
+*.VC.opendb
 *.ncb
 *.sdf
 *.opensdf
 *.cachefile
 
-# Archivos de dependencia (NuGet)
-packages/
-project.assets.json
-
-# 5. ARCHIVOS DE RESPALDO Y TEMPORALES
-######################################
+# 7. ARCHIVOS DE RESPALDO Y TEMPORALES
 *~
 *.swp
 *.swo
@@ -83,17 +80,24 @@ project.assets.json
 *.bak
 *.cache
 
-# 6. HERRAMIENTAS Y ARCHIVOS DE SISTEMA
-########################################
-# ReSharper
+# 8. HERRAMIENTAS
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# Visual Assist
-VA_*.bak
-
-# Archivos de sistema operativo
-.DS_Store # macOS
-Thumbs.db # Windows
+# 9. ARCHIVOS DE SISTEMA
+.DS_Store
+Thumbs.db
 Desktop.ini
+
+# 10. SEGURIDAD - NUNCA SUBIR
+*.key
+*.pem
+*.pfx
+*.cer
+*.config.local
+*.secrets
+*.env
+.env.local
+secrets/
+credentials/
