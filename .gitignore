@@ -22,7 +22,7 @@
 *.dylib
 
 # Visual Studio
-*.vs/
+.vs/
 *.vcxproj.user
 *.suo
 *.user
