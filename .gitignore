@@ -22,14 +22,7 @@
 *.dylib
 
 # Visual Studio
-.vs/
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+
 
 # Directorios de compilaci�n
 [Dd]ebug/
