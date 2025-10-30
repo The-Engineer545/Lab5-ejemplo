@@ -15,6 +15,7 @@ int main()
     std::cout << "Hola, el lado de un cuadrado de base 2, es:\n";
 	std::cout << resultadoCuadro << std::endl;
 
-    std::cout << "Hola, el lado de un circulo de radio 2, es:\n";
+    std::cout << "Hola, el area de un circulo de radio 2, es:\n";
     std::cout << resultadoCirculo << std::endl;
 }
+
